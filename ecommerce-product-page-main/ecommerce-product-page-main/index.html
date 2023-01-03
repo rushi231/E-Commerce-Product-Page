@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href = "https://fonts.google.com/specimen/Kumbh+Sans?query=+Kumbh+Sans#styles" rel = "stylesheet">
+  <link rel = "stylesheet" href=" design/css/styles.css">
+  <link rel = "stylesheet" href="lightbox.css">
+  
+
+  <!-- <title>Frontend Mentor | E-commerce product page</title> -->
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+  </style>
+
+
+</head>
+<body>
+
+
+  <!-- Collections
+  Men
+  Women
+  About
+  Contact
+
+  Sneaker Company
+
+  Fall Limited Edition Sneakers
+
+  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+  $125.00
+  50%
+  $250.00
+
+  0
+  Add to cart -->
+  <header>
+    <nav>
+      <img  id="logo" href = index.html src ="images/logo.svg">
+      <a href = "cart.html">
+        <img  id="carts"  href = cart.html src ="images/icon-cart.svg">
+      </a>
+      <img  id="profile"  src ="images/image-avatar.png">
+      <div class="counter-container" >
+        <span id = "counter"> 0 </span>
+        
+      </div>
+      <ul class="nav__links">
+        <li><a href = index.html>Home</a></li>
+        <li><a href = Men.html>Men</a></li>
+        <li><a  id = "comingsoon"  >Women</a></li>
+        <li><a href = About.html> About </a></li>
+        <li><a href = contact.html> Contact </a></li>
+        
+      </ul>
+      
+    </nav>
+  </header>
+  <div class="attribution">
+    <!-- Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>. -->
+  </div>
+  <div id="line"> </div>
+  
+  <div class = "maincontainer">
+    <div class ="testing">
+      <h1 id = "small">
+        Sneaker Company 
+      </h1> 
+
+      <h2 id="test">
+        Fall Limited Edition <br> Sneakers </br> 
+      </h2>
+      <p id = "mp">  These low-profile sneakers are your perfect casual  wear<br> companion. Featuring a 
+        durable rubber outer sole, they’ll</br> withstand everything the weather can offer. 
+      </p>
+      <h3 id = "price"> $125 </h3>
+      <p2 id = fullprice> $250  </p2>
+      <h4 id ="off1">50%</h4> 
+    </div>
+     
+    <div class = "buttons">
+      <div class = "tester">
+        <button  id = "mbb" onclick="testminusFunction(); " > <img id="minus1" src = images/icon-minus.svg> </img> </button>
+        <button  id ="plusclass" onclick="testFunction(); "> <img id="plus1" src = images/icon-plus.svg> </img> </button>
+        <p id = "zero"> 0</p>
+        <button id = "cartbuttonmain"  onclick="shoppingbutton();"> Add to Cart</button>
+  
+      
+      </div>
+    </div>
+  </div>
+  
+ 
+<!--   
+  <div class = "buttons">
+    <div class = "tester">
+    <button class = "minusbutton" id = "mbb" onclick="testminusFunction(); " > <img id="minus1" src = images/icon-minus.svg> </img> </button>
+    <button class = "plusbutton"  onclick="testFunction(); disableBtn();"> <img id="plus1" src = images/icon-plus.svg> </img> </button>
+    <div class = "shopping-container">
+      <button id = "add-animation" onclick="shoppingbutton();"> Add to Cart</button>
+    </div>
+    
+    </div>
+  </div>   -->
+
+  <!-- <div>
+    <img id = "img1" src = "images/image-product-1.jpg"></img>
+  </div> -->
+  <div id="front-img">
+    <div class = "images">
+      <a href="images/image-product-1.jpg" data-lightbox="shoes"> <img  id ="changeup" src = "images/image-product-1.jpg">
+      </a>
+      
+      <a href="images/image-product-2.jpg" data-lightbox="shoes"> <img id ="changeups" src = "images/image-product-2.jpg">
+      </a>
+      <a href="images/image-product-3.jpg" data-lightbox="shoes"> <img id ="changeup2" src = "images/image-product-3.jpg">
+      </a>
+      <a href="images/image-product-4.jpg" data-lightbox="shoes"> <img id ="changeup3" src = "images/image-product-4.jpg">
+      </a>
+    </div>
+
+    
+  </div>
+  <div class = "smallimages">
+    <a href="images/image-product-1.jpg" data-lightbox="shoes1" > <img id =smallimg1 src="images/image-product-1-thumbnail.jpg" > </a>
+    <a href="images/image-product-2.jpg" data-lightbox="shoes1">  <img id =smallimg2 src="images/image-product-2-thumbnail.jpg" > </a>
+    <a href="images/image-product-3.jpg" data-lightbox="shoes1"> <img id =smallimg3 src="images/image-product-3-thumbnail.jpg" > </a>
+    <a href="images/image-product-4.jpg" data-lightbox="shoes1"> <img id =smallimg4 src="images/image-product-4-thumbnail.jpg" > </a>
+  </div>
+
+
+  <!-- <div class ="greyish">
+    <h1 id="zero"> 0 </h1>
+  </div>  -->
+
+  <!-- <div class = "shopping-container">
+    <button id = "add-animation" onclick="shoppingbutton();"> Add to Cart</button>
+  </div> -->
+  </section>
+  <script src = "lightbox-plus-jquery.js"></script>
+  <script src = "number.js">  </script>
+  
+</body>
+</html>
