@@ -11,7 +11,7 @@
 The objective was to build an e-commerce product page.
 
 
- IN this project you will be able to :
+ In this project you will be able to :
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
